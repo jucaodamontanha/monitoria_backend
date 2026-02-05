@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=monitoria_db'
+      - 'POSTGRES_PASSWORD=Basic@123'
+      - 'POSTGRES_USER=BasicUser'
+    ports:
+      - '5432'
